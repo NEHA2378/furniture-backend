@@ -21,6 +21,11 @@ App.use("/admin", adminRoutes)
 App.use("/web", webRoutes)
 
 App.listen(process.env.PORT || 8000, () => {
+     console.log("ENV CHECK:", {
+        PORT: process.env.PORT,
+        MONGODB_URI: process.env.MONGODB_URI ? "EXISTS" : "MISSING",
+        TOKENKEY: process.env.TOKENKEY ? "EXISTS" : "MISSING"
+    })
     mongoose.connect(process.env.MONGODB_URI)
         .then(() => console.log('Connected!'));
     console.log("Server Started", process.env.PORT);
