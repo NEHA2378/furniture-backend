@@ -429,7 +429,7 @@ let updateCart = async (req, res) => {
     }
 };
 
-const { wishlistModel } = require("../../model/wishlistModel");
+const { wishlistModel } = require("../../model/wishListModel");
 
 let addToWishlist = async (req, res) => {
     const user_id = req.userId;
