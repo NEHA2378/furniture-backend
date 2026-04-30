@@ -1,6 +1,6 @@
 const { mySlug } = require("../../config/helper")
 const categoryModal = require("../../model/categoryModel")
-const subCategoryModal = require("../../model/SubCategoryModel")
+const subCategoryModal = require("../../model/subCategoryModel")
 const subSubCategoryModal = require("../../model/subSubCategoryModel")
 
 let createSubSubCategory = async (req, res) => {
