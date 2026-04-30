@@ -27,8 +27,7 @@ App.use("/web", webRoutes)
 
 App.listen(process.env.PORT || 8000, () => {
 
-    mongoose.connect('mongodb://nehaparmar2378_db_user:ApzBBnJIYKKf8cMJ@ac-bj1frvr-shard-00-00.jza8md8.mongodb.net:27017,ac-bj1frvr-shard-00-01.jza8md8.mongodb.net:27017,ac-bj1frvr-shard-00-02.jza8md8.mongodb.net:27017/onlineFurnitureShop?ssl=true&replicaSet=atlas-ij9y8f-shard-0&authSource=admin&appName=Cluster0')
-        .then(() => console.log('Connected!'));
-    console.log("Server Started", process.env.PORT);
+    mongoose.connect(process.env.MONGODB_URI)
+    .then(() => console.log('Connected!'));
 
 })
