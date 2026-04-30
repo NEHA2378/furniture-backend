@@ -3,7 +3,7 @@ const categoryModal = require("../../model/categoryModel")
 const colorModal = require("../../model/colorModel")
 const materialModal = require("../../model/materialModel")
 const productModal = require("../../model/productModel")
-const subCategoryModal = require("../../model/SubCategoryModel")
+const subCategoryModal = require("../../model/subCategoryModel")
 const subSubCategoryModal = require("../../model/subSubCategoryModel")
 
 let createProduct = async (req, res) => {
