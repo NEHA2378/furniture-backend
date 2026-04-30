@@ -1,4 +1,3 @@
-require("dotenv").config()
 
 let express = require("express")
 const { adminRoutes } = require("./App/routes/admin/adminRoutes")
